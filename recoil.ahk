@@ -18,12 +18,3 @@ DllCall("mouse_event",int,1,int,x,int,y,uint,0,uint,0)
 }
  
 F2:: Suspend
-
-^!z::  ; Control+Alt+Z hotkey.
-MouseGetPos, MouseX, MouseY
-PixelGetColor, color, %MouseX%, %MouseY%
-MsgBox The color at the current cursor position is %color%, %MouseX%, %MouseY%
-
-
-
-
